@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Restaurant Basic Web Clone</title>
+</head>
+<body>
+    <div class="wrapper">
+
+<!-- Navigation A -->
+        <nav class="menu">
+            <button class="dontKnow" aria-expanded="false" aria-controls="menu-list">
+                <span="open">☰</span>
+                <b> / </b>
+                <span="close">x</span>
+            </button>
+            <ul id="menu-list">
+                <li><a href>Tacos</a></li>
+                <li><a href>Beers</a></li>
+                <li><a href>Wines</a></li>
+                <li><a href>Desserts</a></li>
+                <li><a href>Reserve</a></li>
+            </ul>
+        </nav>
+
+<!-- Top Page B-->
+        <div class="top">
+            <header class="hero">
+                <h1>Terry's Taco Joint</h1>
+                <p>Pretyy Good Tacos!</p>
+            </header>
+            <div class="cta cta1">
+                <p class="price">$1.99</p>
+                <p>Tacos</p>
+            </div>
+            <div class="cta cta2">
+                <p class="price">$3.99</p>
+                <p>Kombucha</p>
+            </div>
+        </div>
+
+<!-- Section Features C-->
+        <section class="features">
+            <div class="feature">
+                <span class="icon">🌮</span>    
+                <h3>Tacos</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, porro? Consequuntur, rerum, consectetur quas dignissimos numquam quasi adipisci, laboriosam vitae in fugiat quia iusto distinctio quibusdam blanditiis id omnis totam?</p>
+            </div>
+            <div class="feature">
+                <span class="icon">🍺</span>
+                <h3>Beer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem incidunt illo et tempore, tempora dolorum inventore blanditiis in porro nisi, obcaecati doloremque provident quo cum voluptatem consequatur est labore velit?</p>
+            </div>
+            <div class="feature">
+                <span class="icon">🍷</span>
+                <h3>Wine</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae natus asperiores excepturi rerum dolore cupiditate unde saepe molestias enim, est doloremque impedit aspernatur repudiandae error sunt doloribus mollitia ducimus. Doloremque.</p>
+            </div>
+            <div class="feature">
+                <span class="icon">🎵</span>
+                <h3>Music</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non nobis quidem ipsam, repudiandae explicabo nostrum. Amet earum expedita beatae tempora consequatur, deleniti ipsam. Ea nulla optio earum, accusamus porro vitae?</p>
+            </div>
+        </section>
+
+<!-- Section About D -->
+        <section class="about">
+            <img src="https://jolly-kalam-23776e.netlify.app/restaurantwebsite/images/queso-taco.png" alt="Yummy Taco" class="about__mockup">
+            <div class="about__details">
+                <h2>Featured Taco</h2>
+                <p>Slim Profile, easy to hold and loaded with cheese.</p>
+                <p>This is the one you have been waiting for</p>
+                <button class="change">Learn More →</button>
+            </div>
+        </section>
+
+<!-- Section Gallery E -->
+        <section class="gallery">
+            <h2>Instagrams</h2>
+            <img src="https://source.unsplash.com/random/201x201" alt="food">
+            <img src="https://source.unsplash.com/random/202x202" alt="food">
+            <img src="https://source.unsplash.com/random/203x203" alt="food">
+            <img src="https://source.unsplash.com/random/204x204" alt="food">
+            <img src="https://source.unsplash.com/random/205x205" alt="food">
+            <img src="https://source.unsplash.com/random/206x206" alt="food">
+            <img src="https://source.unsplash.com/random/207x207" alt="food">
+            <img src="https://source.unsplash.com/random/207x208" alt="food">
+            <img src="https://source.unsplash.com/random/207x209" alt="food">
+            <img src="https://source.unsplash.com/random/207x210" alt="food">
+        </section>
+    </div>
+
+    <script>
+        const navButton = document.querySelector('button[aria-expanded]');
+    
+        function toggleNav({ target }) {
+          const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+          navButton.setAttribute('aria-expanded', !expanded);
+        }
+    
+        navButton.addEventListener('click', toggleNav);
+    </script>
+
+</body>
+</html>
